@@ -8,4 +8,4 @@
  */
 /** @var $loader \Composer\Autoload\ClassLoader */
 $loader = include __DIR__ . '/../vendor/autoload.php';
-$loader->add('EventBand\Transport\AmqpLib\Tests', __DIR__, true);
+$loader->addPsr4('EventBand\Transport\AmqpLib\Tests\\', __DIR__, true);

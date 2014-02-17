@@ -57,6 +57,8 @@ class AmqpLibDriverTest extends DriverFunctionalTestCase
 
     protected function tearDownAmqp()
     {
-        $this->conn->close();
+        if ($this->conn) { // Connection will be empty if connection error is raised
+            $this->conn->close();
+        }
     }
 }

@@ -14,16 +14,25 @@
     ],
 
     "autoload": {
-        "psr-0": { "EventBand\\Transport\\AmqpLib": "src/" }
+        "psr-4": { "EventBand\\Transport\\AmqpLib\\": "src/" }
     },
 
     "require": {
-        "php": ">=5.4.1",
-        "event-band/band-framework": "dev-master",
-        "videlalvaro/php-amqplib": "2.0.*, >= 2.0.2"
+        "php": ">=5.4",
+        "event-band/transport-amqp": "0.2.*@dev",
+        "event-band/band-framework": "0.2.*@dev",
+        "videlalvaro/php-amqplib": "2.0.*, >= 2.0.2",
+        "che/console-signals": "dev-master"
     },
 
     "require-dev": {
-        "phpunit/phpunit": "3.7.*"
+        "phpunit/phpunit": "3.7.*",
+        "videlalvaro/php-amqplib": "2.0.2"
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.2.x-dev"
+        }
     }
 }

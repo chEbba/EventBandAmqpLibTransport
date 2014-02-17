@@ -9,17 +9,14 @@
 
 namespace EventBand\Transport\AmqpLib;
 
-use EventBand\Transport\Amqp\Definition\ConnectionDefinition;
 use EventBand\Transport\Amqp\Definition\ExchangeDefinition;
 use EventBand\Transport\Amqp\Definition\QueueDefinition;
 use EventBand\Transport\Amqp\Driver\AmqpDriver;
-use EventBand\Transport\Amqp\Driver\CustomAmqpMessage;
 use EventBand\Transport\Amqp\Driver\DriverException;
 use EventBand\Transport\Amqp\Driver\MessageDelivery;
 use EventBand\Transport\Amqp\Driver\MessagePublication;
 use PhpAmqpLib\Channel\AMQPChannel;
 use PhpAmqpLib\Connection\AbstractConnection;
-use PhpAmqpLib\Connection\AMQPConnection;
 use PhpAmqpLib\Message\AMQPMessage as AmqpLibMessage;
 
 /**
